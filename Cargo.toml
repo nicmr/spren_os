@@ -1,0 +1,15 @@
+[package]
+name = "spren_os"
+version = "0.1.0"
+authors = ["nico"]
+
+[dependencies]
+
+
+##disable stack unwinding
+##not required anymore: set in target.json
+#[profile.dev]
+#panic = "abort"
+
+#[profile.release]
+#panic = "abort"
