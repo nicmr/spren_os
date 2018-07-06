@@ -4,12 +4,8 @@ version = "0.1.0"
 authors = ["nico"]
 
 [dependencies]
+volatile = "0.2.3"
 
 
-##disable stack unwinding
-##not required anymore: set in target.json
-#[profile.dev]
-#panic = "abort"
-
-#[profile.release]
-#panic = "abort"
+[package.metadata.bootimage]
+default-target = "x86_64-spren_os.json"
